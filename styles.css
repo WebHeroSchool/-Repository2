@@ -1,0 +1,338 @@
+body {
+	margin: 0;
+	background: url(img/fon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header {
+	margin: 0 6% 0 10.4%;
+	padding: 87px 0 135px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.logo, .menu {
+	display: inline-block;
+}
+.logo {
+	width: 147px;
+	height: 55px;
+	background: url(img/logo.svg);
+	color: #FCF5ED;
+	background-repeat: no-repeat;
+}
+.menu {
+  	display: flex;
+  	align-items: center;
+}
+.menu__item {
+	position: relative;
+	margin-right: 38px;
+	font: 500 22px/26px MuseoSansCyrl, arial, helvetica, sans-serif;
+	color: #F8EEE4;
+	text-decoration: none;
+	transition: opacity 0.5s;
+}
+.menu__item:hover {
+  	opacity: 0.5;
+}
+.menu__item:hover:after {
+  	position: absolute;
+  	left: 0;
+  	display: block;
+  	content: '';
+  	width: 100%;
+  	height: 3px;
+  	background: #F8EEE4;
+}
+.menu__item:last-child {
+  	margin-right: 0px;
+}
+.main {
+	padding: 0 0 0 10.4%;
+	display: flex;
+    justify-content: space-between;
+}
+.main__text {
+	max-width: 33%;
+}
+.main__title1 {
+	margin: 0;
+	font: bold 14.5vw PT Serif, serif;
+	color: #F8EEE4;
+	opacity: 0.4;
+}
+.main__title2 {
+	margin: -143px 0 22px 84px;
+	font: bold 5.1vw PT Serif, serif; 
+	color: #F8EEE4;
+}
+.main__subtitle {
+	white-space: pre-line;
+	margin: 0 0px 54px 21px;
+	font: 500 1.13vw/1.4vw MuseoSansCyrl, arial, helvetica, sans-serif;
+	color: #F8EEE4;
+	letter-spacing: 0.009vw;
+}
+.main__button {
+	margin-left: 22px;
+	padding: 1vw 4.64vw;
+	color: #FFFFFF;
+	font: 500 1.15vw MuseoSansCyrl, arial, helvetica, sans-serif;
+	border-radius: 48px;
+	text-decoration: none;
+	background: #D4BEA3;
+}
+.main__button:hover {
+	opacity: 0.7;
+	color: #000;
+}
+.img {
+	width: 51.5%;
+	padding-top: 109px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.img__01 {
+	width: 319px;
+	height: 423px;
+	background: url(img/01.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-right: 31px;
+}
+.img__02 {
+	width: 286px;
+	height: 380px;
+	background: url(img/02.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-right: 33px;
+}
+.img__03 {
+	width: 208px;
+	height: 380px;
+	background: url(img/03.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#menu__toggle {
+  	display: none;
+}
+
+@media (max-width: 1366px) {
+	body {
+    min-height: 100vh;
+	}
+	.header {
+    padding: 53px 0 62px 0;
+	}
+	.logo {
+    width: 104px;
+    height: 52px;
+    background-size: 7.7vw 4.6vw;
+	}
+	.menu__item {
+    margin-right: 26px;
+    font: 500 16px/19px MuseoSansCyrl, arial, helvetica, sans-serif;
+	}
+	.main__title1 {
+    padding-top: 27px;
+    font: bold 14.6vw PT Serif, serif;
+	}
+	.main__title2 {
+    margin: -100px 0 16px 60px;
+	}
+	.main__subtitle {
+    margin: 0 0px 37px 15px;
+    font: 500 1.13vw/1.4vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    letter-spacing: 0.02vw;
+	}
+	.main__button {
+    margin-left: 16px;
+	}
+	.img {
+    width: 51.1%;
+	}
+	.img__01 {
+    width: 248px;
+    height: 300px;
+    margin-right: 23px;
+	}
+	.img__02 {
+    width: 222px;
+    height: 270px;
+    margin-right: 23px;
+	}
+	.img__03 {
+    width: 163px;
+    height: 270px;
+	}
+}
+
+@media (max-width: 1024px) {
+	body {
+	background: url(img/fon1024.png);
+	}
+	.header {
+    padding: 57px 0 62px 0;
+    margin: 0 3.6% 0 4.1%;
+	}
+	.logo {
+    background-size: 10vw 5vw;
+	}
+	.main {
+    padding: 0 0 0 4.2%;
+	}
+	.main__text {
+    max-width: 41%;
+	}
+	.main__title1 {
+    padding-top: 26px;
+    font: bold 19.3vw PT Serif, serif;
+	}
+	.main__title2 {
+    margin: -99px 0 15px 58px;
+    font: bold 6.8vw PT Serif, serif;
+	}
+	.main__subtitle {
+    margin: 0 0px 38px 15px;
+    font: 500 1.48vw/1.9vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    letter-spacing: 0.036vw;
+	}
+	.main__button {
+    margin-left: 15px;
+    padding: 1.3vw 6vw;
+    font: 500 1.6vw MuseoSansCyrl, arial, helvetica, sans-serif;
+	}
+	.img {
+    width: 52.3%;
+	}
+	.img__03 {
+    width: 41px;
+    background-size: 388%;
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+	background: url(img/fon375.png);
+	}
+	.header {
+    padding: 40px 0 50px 0;
+    margin: 0 7.6% 0 11.1%;
+	}
+	.logo {
+    background-size: 27.5vw 11vw;
+    height: 44px;
+	}
+	.main__text {
+    max-width: 96%;
+	}
+	.main__title1 {
+    padding-top: 3px;
+    font: bold 45.3vw PT Serif, serif;
+	}
+	.main__title2 {
+    margin: -76px 0 37px 60px;
+    font: bold 16vw PT Serif, serif;
+	}
+	.main__subtitle {
+    margin: 0 0px 48px 23px;
+    font: 500 4.8vw/6.1vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    max-width: 86%;
+    text-align: center;
+    letter-spacing: 0;
+	}
+	.main__button {
+    margin-left: 60px;
+    padding: 3.3vw 16.7vw;
+    font: 500 4.3vw MuseoSansCyrl, arial, helvetica, sans-serif;
+	}
+	.img {
+    width: 0;
+	}
+
+
+	.menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 15.2vw;
+    left: 84.5vw;
+    width: 25px;
+    height: 17px;
+    cursor: pointer;
+    z-index: 1;
+  	}
+  	.menu__btn > span,
+  	.menu__btn > span::before,
+  	.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #FCF5ED;
+
+  	}
+  	.menu__btn > span::before {
+    content: '';
+    top: -6.8px;
+  	}
+  	.menu__btn > span::after {
+    content: '';
+    top: 6.8px;
+  	}
+  	.menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 195px 11px;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+  	}
+  
+  	/* элементы меню */
+  	.menu__item {
+    display: block;
+    margin-bottom: 41px;
+    margin-right: 22px;
+    color: #000;
+    font: 500 30px/19px MuseoSansCyrl, arial, helvetica, sans-serif;
+    text-decoration: none;
+    transition: opacity 0.5s;
+    text-transform: lowercase; /*Все символы текста становятся строчными*/
+  	}
+  	.menu__item:last-child {
+    margin-right: 22px;
+	}
+  	.menu__item:hover {
+    background-color: #CFD8DC;
+  	}
+
+  	#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    top: -18px;
+    left: 9px;
+  	}
+  	#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0px;
+    transform: rotate(0deg);
+    background-color: #000;
+  	}
+  	#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0px;
+    transform: rotate(90deg);
+    background-color: #000;
+  	}
+  	#menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  	}
+}
