@@ -3,6 +3,7 @@ body {
 	background: url(img/fon.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 100vh;
 }
 .header {
 	margin: 0 6% 0 10.4%;
@@ -55,13 +56,13 @@ body {
 .main__text {
 	max-width: 33%;
 }
-.main__title1 {
+.main__title-bali {
 	margin: 0;
 	font: bold 14.5vw PT Serif, serif;
 	color: #F8EEE4;
 	opacity: 0.4;
 }
-.main__title2 {
+.main__title-indonesia {
 	margin: -143px 0 22px 84px;
 	font: bold 5.1vw PT Serif, serif; 
 	color: #F8EEE4;
@@ -93,7 +94,7 @@ body {
 	justify-content: flex-end;
 	align-items: center;
 }
-.img__01 {
+.img__first {
 	width: 319px;
 	height: 423px;
 	background: url(img/01.png);
@@ -101,7 +102,7 @@ body {
 	background-size: 100%;
 	margin-right: 31px;
 }
-.img__02 {
+.img__second {
 	width: 286px;
 	height: 380px;
 	background: url(img/02.png);
@@ -109,7 +110,7 @@ body {
 	background-size: 100%;
 	margin-right: 33px;
 }
-.img__03 {
+.img__third {
 	width: 208px;
 	height: 380px;
 	background: url(img/03.png);
@@ -121,9 +122,6 @@ body {
 }
 
 @media (max-width: 1366px) {
-	body {
-    min-height: 100vh;
-	}
 	.header {
     padding: 53px 0 62px 0;
 	}
@@ -136,11 +134,11 @@ body {
     margin-right: 26px;
     font: 500 16px/19px MuseoSansCyrl, arial, helvetica, sans-serif;
 	}
-	.main__title1 {
+	.main__title-bali {
     padding-top: 27px;
     font: bold 14.6vw PT Serif, serif;
 	}
-	.main__title2 {
+	.main__title-indonesia {
     margin: -100px 0 16px 60px;
 	}
 	.main__subtitle {
@@ -154,17 +152,17 @@ body {
 	.img {
     width: 51.1%;
 	}
-	.img__01 {
+	.img__first {
     width: 248px;
     height: 300px;
     margin-right: 23px;
 	}
-	.img__02 {
+	.img__second {
     width: 222px;
     height: 270px;
     margin-right: 23px;
 	}
-	.img__03 {
+	.img__third {
     width: 163px;
     height: 270px;
 	}
@@ -187,11 +185,11 @@ body {
 	.main__text {
     max-width: 41%;
 	}
-	.main__title1 {
+	.main__title-bali {
     padding-top: 26px;
     font: bold 19.3vw PT Serif, serif;
 	}
-	.main__title2 {
+	.main__title-indonesia {
     margin: -99px 0 15px 58px;
     font: bold 6.8vw PT Serif, serif;
 	}
@@ -208,7 +206,7 @@ body {
 	.img {
     width: 52.3%;
 	}
-	.img__03 {
+	.img__third {
     width: 41px;
     background-size: 388%;
 	}
@@ -255,8 +253,8 @@ body {
 
 
 	.menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 15.2vw;
     left: 84.5vw;
@@ -307,7 +305,7 @@ body {
     font: 500 30px/19px MuseoSansCyrl, arial, helvetica, sans-serif;
     text-decoration: none;
     transition: opacity 0.5s;
-    text-transform: lowercase; /*Все символы текста становятся строчными*/
+    text-transform: lowercase;
   	}
   	.menu__item:last-child {
     margin-right: 22px;
