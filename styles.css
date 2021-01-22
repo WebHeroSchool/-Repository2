@@ -28,7 +28,7 @@ body {
 .menu__item {
 	position: relative;
 	margin-right: 38px;
-	font: 500 22px/26px MuseoSansCyrl, arial, helvetica, sans-serif;
+	font: 500 1.15vw MuseoSansCyrl, arial, helvetica, sans-serif;
 	color: #F8EEE4;
 	text-decoration: none;
 	transition: opacity 0.5s;
@@ -132,7 +132,7 @@ body {
 	}
 	.menu__item {
     margin-right: 26px;
-    font: 500 16px/19px MuseoSansCyrl, arial, helvetica, sans-serif;
+    font: 500 1.17vw MuseoSansCyrl, arial, helvetica, sans-serif;
 	}
 	.main__title-bali {
     padding-top: 27px;
@@ -170,7 +170,7 @@ body {
 
 @media (max-width: 1024px) {
 	body {
-	background: url(img/fon1024.png);
+    background: url(img/fon1024.png);
 	}
 	.header {
     padding: 57px 0 62px 0;
@@ -178,6 +178,10 @@ body {
 	}
 	.logo {
     background-size: 10vw 5vw;
+	}
+	.menu__item {
+    margin-right: 26px;
+    font: 500 1.57vw MuseoSansCyrl, arial, helvetica, sans-serif;
 	}
 	.main {
     padding: 0 0 0 4.2%;
@@ -214,7 +218,7 @@ body {
 
 @media (max-width: 375px) {
 	body {
-	background: url(img/fon375.png);
+    background: url(img/fon375.png);
 	}
 	.header {
     padding: 40px 0 50px 0;
@@ -250,8 +254,6 @@ body {
 	.img {
     width: 0;
 	}
-
-
 	.menu__btn {
     display: flex;
     align-items: center;
@@ -295,8 +297,6 @@ body {
     text-align: center;
     background-color: #ECEFF1;
   	}
-  
-  	/* элементы меню */
   	.menu__item {
     display: block;
     margin-bottom: 41px;
