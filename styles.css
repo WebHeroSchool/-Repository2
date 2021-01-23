@@ -63,7 +63,7 @@ body {
 	opacity: 0.4;
 }
 .main__title-indonesia {
-	margin: -143px 0 22px 84px;
+	margin: -7.4vw 0 22px 4.3vw;
 	font: bold 5.1vw PT Serif, serif; 
 	color: #F8EEE4;
 }
@@ -139,7 +139,7 @@ body {
     font: bold 14.6vw PT Serif, serif;
 	}
 	.main__title-indonesia {
-    margin: -100px 0 16px 60px;
+    margin: -7.2vw 0 14px 4.3vw;
 	}
 	.main__subtitle {
     margin: 0 0px 37px 15px;
@@ -171,6 +171,8 @@ body {
 @media (max-width: 1024px) {
 	body {
     background: url(img/fon1024.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 	.header {
     padding: 57px 0 62px 0;
@@ -194,7 +196,7 @@ body {
     font: bold 19.3vw PT Serif, serif;
 	}
 	.main__title-indonesia {
-    margin: -99px 0 15px 58px;
+    margin: -9.6vw 0 15px 5.7vw;
     font: bold 6.8vw PT Serif, serif;
 	}
 	.main__subtitle {
@@ -216,9 +218,135 @@ body {
 	}
 }
 
+@media (max-width: 768px) {
+	body {
+    background: url(img/fon375.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	.header {
+    padding: 80px 0 36px 0;
+    margin: 0 7.6% 0 11.1%;
+	}
+	.logo {
+    background-size: 21.5vw 11vw;
+    height: 76px;
+    width: 167px
+	}
+	.main__text {
+    max-width: 96%;
+	}
+	.main__title-bali {
+    padding-left: 11vw;
+    padding-top: 15px;
+    font: bold 32.7vw PT Serif, serif;
+	}
+	.main__title-indonesia {
+    margin: -14vw 0 53px 22vw;
+    font: bold 11.5vw PT Serif, serif;
+	}
+	.main__subtitle {
+    margin: 0 0px 72px 15vw;
+    font: 500 3.7vw/4.4vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    max-width: 64%;
+    text-align: center;
+    letter-spacing: 0;
+	}
+	.main__button {
+    margin-left: 24vw;
+    padding: 2.3vw 11.7vw;
+    font: 500 3.2vw MuseoSansCyrl, arial, helvetica, sans-serif;
+	}
+	.img {
+    width: 0;
+	}
+
+	.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 15.3vw;
+    left: 82.5vw;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+  	}
+  	.menu__btn > span,
+  	.menu__btn > span::before,
+  	.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #FCF5ED;
+
+  	}
+  	.menu__btn > span::before {
+    content: '';
+    top: -11.8px;
+  	}
+  	.menu__btn > span::after {
+    content: '';
+    top: 11.8px;
+  	}
+  	.menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 292px 11px;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+  	}
+  	.menu__item {
+    display: block;
+    margin-bottom: 82px;
+    margin-right: 37px;
+    color: #000;
+    font: 500 50px/21px MuseoSansCyrl, arial, helvetica, sans-serif;
+    text-decoration: none;
+    transition: opacity 0.5s;
+    text-transform: lowercase;
+  	}
+  	.menu__item:last-child {
+    margin-right: 37px;
+	}
+  	.menu__item:hover {
+    background-color: #CFD8DC;
+  	}
+
+  	#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    top: -18px;
+    left: 9px;
+  	}
+  	#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0px;
+    transform: rotate(0deg);
+    background-color: #000;
+  	}
+  	#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0px;
+    transform: rotate(90deg);
+    background-color: #000;
+  	}
+  	#menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  	}
+}
+
 @media (max-width: 375px) {
 	body {
     background: url(img/fon375.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 	.header {
     padding: 40px 0 50px 0;
@@ -227,11 +355,13 @@ body {
 	.logo {
     background-size: 27.5vw 11vw;
     height: 44px;
+    width: 104px;
 	}
 	.main__text {
     max-width: 96%;
 	}
 	.main__title-bali {
+    padding-left: 0;
     padding-top: 3px;
     font: bold 45.3vw PT Serif, serif;
 	}
@@ -254,6 +384,8 @@ body {
 	.img {
     width: 0;
 	}
+
+
 	.menu__btn {
     display: flex;
     align-items: center;
@@ -273,7 +405,6 @@ body {
     width: 100%;
     height: 3px;
     background-color: #FCF5ED;
-
   	}
   	.menu__btn > span::before {
     content: '';
